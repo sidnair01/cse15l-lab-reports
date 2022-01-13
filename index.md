@@ -1,5 +1,3 @@
-*Siddhartha Nair*
-
 **Siddhartha Nair**
 
 # Siddhartha Nair
