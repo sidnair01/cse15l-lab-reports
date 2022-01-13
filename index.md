@@ -1,1 +1,1 @@
-*Italic*Siddhartha Nair
+*Siddhartha Nair*
