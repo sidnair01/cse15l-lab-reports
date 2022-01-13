@@ -12,4 +12,4 @@
 
 > This is a blockquote
 
-![Image](https://skydayproject.com)
+![Image](file:///C:/Users/sidna/AppData/Local/Temp/pexels-soubhagya-maharana-5245865.jpg)
