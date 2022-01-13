@@ -6,7 +6,7 @@
 
 ## Siddhartha Nair
 
-[Link] (https://www.google.com)
+[Link](https://www.google.com)
 
 1. One
 2. Two
