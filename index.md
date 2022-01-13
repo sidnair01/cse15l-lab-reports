@@ -12,4 +12,4 @@
 
 > This is a blockquote
 
-![Image](file:///C:/Users/sidna/AppData/Local/Temp/pexels-soubhagya-maharana-5245865.jpg)
+![Image](https://images.squarespace-cdn.com/content/v1/55cfb535e4b061baebe310df/1587472623697-IC8B3J3ZIZI0AMIE7U8G/sky+photo+for+website+home+page.jpeg?format=2500w)
