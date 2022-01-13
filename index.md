@@ -1,10 +1,11 @@
 # Siddhartha Nair
 **Siddhartha Nair**   `randomcode`
 ## Siddhartha Nair
-
-....#code block
-....do this
-....then do this
+```
+# code block
+do this
+then do this
+```
 
 [Google](https://www.google.com)  *Sid in Italics*
 
