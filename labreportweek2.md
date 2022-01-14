@@ -43,9 +43,12 @@ Once this is saved the server containing the public key will automatically recog
 
 *Optimizing Remote Running*
 
-It is possible to run commands while simultaneously connecting to the server by including any further commands after in quotations.
+To run commands while connecting to the server, including further commands on the same line in quotes.
 ![Image](https://i.gyazo.com/ea9fd31542ee332dda199e35a18bd718.png)
 
 To allow multiple commands to be run on a single line, separate them with a semicolon.
 ![Image](https://i.gyazo.com/aa02decb75b8a06c1cd78a564c49cdf9.png)
 In this example the ```WhereAmI.java``` file is being called on both the client and server simultaneously.
+
+Running commands from client to server can be sped up if the amount of terminal requests is reduced.
+Shortening our commands to fit onto fewer lines both simplifies and speeds up the process.
