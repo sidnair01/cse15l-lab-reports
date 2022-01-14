@@ -12,10 +12,11 @@ Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu`
 *Trying some Commands*
 
 After connecting to the machine, try these commands and make sure they work as they should
--```ls -lat``` lists all files in a directory
--```ls -a``` lists all public files
--```cd <directory>``` changes path to the speciifed directory
--```mkdir <directory>``` makes a new directory with the given name in the path
+
+1. ```ls -lat``` lists all files in a directory
+2. ```ls -a``` lists all public files
+3. ```cd <directory>``` changes path to the speciifed directory
+4. ```mkdir <directory>``` makes a new directory with the given name in the path
 
 
 *Moving Files with* ```scp```
