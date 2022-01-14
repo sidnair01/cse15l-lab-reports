@@ -1,4 +1,4 @@
-The objective of our first lab was to remote access and modify files on UCSD campus-machines remotely.
+The objective of our first lab was to remotely access and modify files on UCSD campus-machines from one personal computer.
 
 *Installing VSCode*
 
