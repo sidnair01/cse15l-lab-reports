@@ -7,9 +7,16 @@ Download the correct VSCode installer for your operating system. This should ope
 *Remotely Connecting*
 
 The first step to remotely connecting is instaling an SSH program, for example, OpenSSH for Windows.
-Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu```, replacing ```zz``` with the code associated with your own student code. You can find your student code by visiting this [Link](https://sdacs.ucsd.edu/~icc/index.php) and entering your username and student ID number. You may or may not be required to change your account password.
+Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu```, replacing ```zz``` with the phrase associated with your student ETS account. If you don't know your ETS account, visit this [Link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID number. You may or may not be required to change your account password.
 
 *Trying some Commands*
+
+After connecting to the machine, try these commands and make sure they work as they should
+-```ls -lat``` lists all files in a directory
+-```ls -a``` lists all public files
+-```cd <directory>``` changes path to the speciifed directory
+-```mkdir <directory>``` makes a new directory with the given name in the path
+
 
 *Moving Files with* ```scp```
 
