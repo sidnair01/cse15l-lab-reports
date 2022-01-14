@@ -27,18 +27,20 @@ After connecting to the machine, try these commands and ensure they work as they
 *Moving Files with* ```scp```
 
 Move into the directory on the client computer containing the file. Then type:
-```scp <filename> cs15lwi22zz@ieng6.csd.edu:~/``` 
+```scp <filename> cs15lwi22zz@ieng6.csd.edu:~/<directory>``` 
 (remembering to replace ```zz``` with your personal phrase).
-Certain statistics should be displayed such as the file name, copy percetange complete, filesize, download speed, and time.
+Specify the filename before the server, and specify the server directory at the end.
+If it works, certain statistics should be displayed such as the file name, copy percetange complete, filesize, download speed, and time.
 
 ![Image](https://i.gyazo.com/2e7a8b278f7fee8890c01cd8eb285589.png)
 
 *Setting an SSH Key*
 
 Type ```ssh-keygen``` onto the client computer. This will create a private and public key pair within the directory ```Users/<your user>/.ssh/id_rsa``` by default, and ask you to set an optional passphrase.
-Change to this directory on your client computer and use the ```scp``` command described before to copy the public key file to the specified directory on the server.
+Change to this directory on your client computer and use the ```scp``` command described before to copy the public key file to this directory on the server.
 ```scp id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
-Once this is saved the server containing the public key will automatically recognize the client containing the private key and will allow connection without a password requirement.
+
+Once saved, the server containing the public key will automatically recognize the client containing the private key. Therefore, the server will allow connection from the client without a password.
 ![Image](https://i.gyazo.com/a60598dadd98218b4d982e11f17ce019.png)
 
 *Optimizing Remote Running*
