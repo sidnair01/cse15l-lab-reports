@@ -3,7 +3,8 @@ The objective of our first lab was to remotely access and modify files on UCSD c
 >*Installing VSCode*
 
 If not done already, install the correct version of VSCode for your operating system. Once finished, start the program, which should open an empty page.
-![Image](https://i.gyazo.com/1b658b1e105963ab1d3ca846d61353df.png)
+
+![Image](https://i.gyazo.com/d0a170818e2ec5385168fb1b63872fc9.png)
 
 New files and terminals can be created from the toolbar above.
 
