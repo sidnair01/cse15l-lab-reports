@@ -10,7 +10,7 @@ New files and terminals can be created from the toolbar above.
 
 >*Remotely Connecting*
 
-The first step to remotely connecting is instaling an SSH program, for example, OpenSSH for Windows.
+The first step to remotely connecting is installing an SSH program, for example, OpenSSH for Windows.
 Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu```, replacing ```zz``` with the phrase associated with your student ETS account, and entering the password associated with such ETS account. If you don't know your ETS account, visit this [Link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID number, and change your password if necessary. 
 
 ![Image](https://i.gyazo.com/6ebe06beeb7c622d365c6cb6c4b9cd99.png)
@@ -47,7 +47,7 @@ Once saved, the server containing the public key will automatically recognize th
 
 >*Optimizing Remote Running*
 
-To run commands while connecting to the server, including further commands on the same line in quotes.
+To run certain commands while connecting to the server, include them on the same line in quotes.
 ![Image](https://i.gyazo.com/ea9fd31542ee332dda199e35a18bd718.png)
 
 To allow multiple commands to be run on a single line, separate them with a semicolon.
