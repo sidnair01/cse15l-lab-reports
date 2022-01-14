@@ -43,7 +43,9 @@ Once this is saved the server containing the public key will automatically recog
 
 *Optimizing Remote Running*
 
-To speed up the procress, multiple commands can be combined within a single line on the terminal.
-For instance you can call commands in quotes such as ```ls``` while attempting ```ssh``` which will automatically display the files within the server upon connection. 
+It is possible to run commands while simultaneously connecting to the server by including any further commands after in quotations.
+![Image](https://i.gyazo.com/ea9fd31542ee332dda199e35a18bd718.png)
 
-Another option is running multiple commands separated by semicolon, such as compiling and running a file on the same line.
+To allow multiple commands to be run on a single line, separate them with a semicolon.
+![Image](https://i.gyazo.com/aa02decb75b8a06c1cd78a564c49cdf9.png)
+In this example the ```WhereAmI.java``` file is being called on both the client and server simultaneously.
