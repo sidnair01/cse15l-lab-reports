@@ -48,7 +48,9 @@ Type ```ssh-keygen``` onto the client computer. This will create a private and p
 
 Extra steps for Windows users can be found through this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
 
-Use the commands ```ssh-add <path of key>``` to add the key files into the ssh-agent, and ```mkdir C:\Users\username\.ssh\``` to create a folder to hold the public key.
+![Image](https://i.gyazo.com/bf1828a95de3812762ccafb16884cc0d.png)
+
+Within an administrator prompt, use the commands ```ssh-add <path of key>``` to add the key files into the ssh-agent, and ```mkdir C:\Users\username\.ssh\``` to create a folder to hold the public key.
 
 Use the ```scp``` command described before to copy the public key file to this directory on the server.
 ```scp /Users/<your user>/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
