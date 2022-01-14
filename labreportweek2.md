@@ -9,7 +9,7 @@ Download the correct VSCode installer for your operating system. This should ope
 *Remotely Connecting*
 
 The first step to remotely connecting is instaling an SSH program, for example, OpenSSH for Windows.
-Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu```, replacing ```zz``` with the phrase associated with your student ETS account. If you don't know your ETS account, visit this [Link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID number. You may or may not be required to change your account password.
+Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu```, replacing ```zz``` with the phrase associated with your student ETS account, and entering the password associated with such ETS account. If you don't know your ETS account, visit this [Link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID number, and change your password if necessary. 
 
 ![Image](https://i.gyazo.com/253bfd51dbbf43fc1238576e6df76d6f.png)
 
@@ -26,6 +26,15 @@ After connecting to the machine, try these commands and make sure they work as t
 
 *Moving Files with* ```scp```
 
+To move a file from a certain path on client computer to the server, the ```scp``` command is used.
+Make sure to move into the directory containing the file you want to transfer. Then type:
+
+```scp <filename> cs15lwi22zz@ieng6.csd.edu:~/``` into the terminal, once again replacing ```zz``` with your personal phrase. Certain statistics should be displayed such as the file name, copy percetange complete, filesize, download speed, and time.
+
+![Image](https://i.gyazo.com/2e7a8b278f7fee8890c01cd8eb285589.png)
+
 *Setting an SSH Key*
+
+
 
 *Optimizing Remote Running*
