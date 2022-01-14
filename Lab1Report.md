@@ -2,7 +2,7 @@ The objective of our first lab was to remotely access and modify files on UCSD c
 
 >*Installing VSCode*
 
-If not done already, install the correct version of VSCode for your operating system. Once finished, start the program, which should open an empty page.
+If not done already, install the correct version of VSCode for your operating system through this [Link]( https://code.visualstudio.com/). Follow the instructions and once finished, start the program, which should open an empty page.
 
 ![Image](https://i.gyazo.com/d0a170818e2ec5385168fb1b63872fc9.png)
 
@@ -14,6 +14,8 @@ The first step to remotely connecting is installing an SSH program, for example,
 Then create a new terminal in VSCode and type ```ssh cs15lwi22zz@ieng6.ucsd.edu```, replacing ```zz``` with the phrase associated with your student ETS account, and entering the password associated with such ETS account. If you don't know your ETS account, visit this [Link](https://sdacs.ucsd.edu/~icc/index.php) and enter your username and student ID number, and change your password if necessary. 
 
 ![Image](https://i.gyazo.com/6ebe06beeb7c622d365c6cb6c4b9cd99.png)
+
+When you first connect to the server, type 'yes' to the initial question.
 
 >*Trying some Commands*
 
@@ -36,11 +38,20 @@ If it works, certain statistics should be displayed such as the file name, copy 
 
 ![Image](https://i.gyazo.com/2e7a8b278f7fee8890c01cd8eb285589.png)
 
+![Image](https://i.gyazo.com/80e538d3c85971f26a5979158aa6f6b4.png)
+The file should appear in the server directory as so.
+
 >*Setting an SSH Key*
 
 Type ```ssh-keygen``` onto the client computer. This will create a private and public key pair within the directory ```Users/<your user>/.ssh/id_rsa``` by default, and ask you to set an optional passphrase.
-Change to this directory on your client computer and use the ```scp``` command described before to copy the public key file to this directory on the server.
-```scp id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
+![Image](https://i.gyazo.com/aba796d7b1be73dea8fcfb736c84bf87.png)
+
+Extra steps for Windows users can be found through this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+
+Use the commands ```ssh-add <path of key>``` to add the key files into the ssh-agent, and ```mkdir C:\Users\username\.ssh\``` to create a folder to hold the public key.
+
+Use the ```scp``` command described before to copy the public key file to this directory on the server.
+```scp /Users/<your user>/.ssh/id_rsa.pub cs15lwi22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys```
 
 Once saved, the server containing the public key will automatically recognize the client containing the private key. Therefore, the server will allow connection from the client without a password.
 ![Image](https://i.gyazo.com/a60598dadd98218b4d982e11f17ce019.png)
