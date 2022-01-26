@@ -46,7 +46,7 @@ The file should appear in the server directory as so.
 Type ```ssh-keygen``` onto the client computer. This will create a private and public key pair within the directory ```Users/<your user>/.ssh/id_rsa``` by default, and ask you to set an optional passphrase.
 ![Image](https://i.gyazo.com/aba796d7b1be73dea8fcfb736c84bf87.png)
 
-Extra steps for Windows users can be found through this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
+> Extra steps for Windows users can be found through this [Link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation)
 
 ![Image](https://i.gyazo.com/bf1828a95de3812762ccafb16884cc0d.png)
 
