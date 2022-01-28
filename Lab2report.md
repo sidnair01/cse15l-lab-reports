@@ -22,10 +22,12 @@ The bug here is the code ```currentIndex = closeParen +1;```. This is problemati
 
 
 
-![Test 6 Fix]()
-[Commit Link]()
+![Test 6 Fix](https://i.gyazo.com/1ac365d4b6cc5baebfa4863dd3d647d0.png)
+[Commit Link](https://github.com/sidnair01/markdown-parse/commit/8624b3128767922b0e65ccc5724bb4107ba01a69)
 
 
 [Test 6](https://sidnair01.github.io/markdown-parse/test-file6.html)
 
 ![Test 6 Error](https://i.gyazo.com/8dfa504f45171730196e4223efaa0789.png)
+
+The bug here is that there is no conditional statement that checks for an exclamation point before the brackets. The only difference between a link and image declaration is that exclamation point. To prevent images from being added to the list of links, we added the conditional statement ```if(nextOpenBracket!=-1 && markdown.charAt(nextOpenBracket-1)=='!'``` to check if the brackets are refering to an image. If the program has found a valid image, the code ```currentIndex = nextcloseBracket + 1``` is run to continue searching for links. Also added more requirements within the conditional statement to rule out additional false alarms while link searching.
