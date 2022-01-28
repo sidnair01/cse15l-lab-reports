@@ -10,7 +10,12 @@
 The bug here is that the code ```toReturn.add(markdown.substring(openParen + 1, closeParen))``` lacks any conditional statement. As a result, if openParen and/or closeParen is negative, then the program would be trying to find the index of markdown at -1 which would create an ```java.lang.StringIndexOutOfBoundsException```. This was fixed by adding the statement ```if(openParen!=-1 && closeParen!=-1)``` before the add method, which prevents negative values from entering and therefore keeps the list empty if no parenthesis are found.
 
 
-The bugs in this version of markdownparse was ```currentIndex = closeParen +1;``` and ```toReturn.add(markdown.substring(openParen + 1, closeParen));```. These pieces of code are problematic because openParen and closeParen would be negative if no parenthesis were found in the test file, which was the case in test-file3.md. If closeParen was negative then ```currentIndex < markdown.length()``` would always remain true and the loop would run infinitely, preventing anything from being displayed on the terminal. This infiniteloop was fixed by changing the code to ```currentIndex +=1```. However, if openParen or closeParen was negative, it would then cause an index out of bounds exception. I solved this by adding the conditional statement ```if(openParen!=-1 && closeParen!=-1)```.
+
+[Test 4](https://sidnair01.github.io/markdown-parse/test-file4.html)
+
+![Image](https://i.gyazo.com/43e8434c972415d8ae6712fb1302b082.png)
+
+The bug here is the code ```currentIndex = closeParen +1;```. This is problematic because ```closeParen``` will be equal to -1 if no closed parenthesis is found in the file, which is the case in test-file4. Therefore, the adding 1 to ```closeParen``` means we are setting ```currentIndex``` equal to 0. Therefore, ```currentIndex < markdown.length()``` will always remain true and the while loop will run infinitely, preventing any output from being displayd on the terminal. This was fixed by moving the statement ```currentIndex = closeParen +1;``` underneath the conditional statement ```if(openParen!=-1 && closeParen!=-1)```, which filters out negative values. Then write the statement ```else{currentIndex+=1;}``` which runs if there are no parenthesis in the file.
 
 
 
