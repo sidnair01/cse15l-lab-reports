@@ -7,6 +7,11 @@
 
 ![Image](https://i.gyazo.com/ae4b1881d5a4e6a09cbbfeae3dabdf9d.png)
 
+The bugs in this version of markdownparse was ```currentIndex = closeParen +1;``` and ```toReturn.add(markdown.substring(openParen + 1, closeParen));```. These pieces of code are problematic because openParen and closeParen would be negative if no parenthesis were found in the test file, which was the case in test-file3.md. If closeParen was negative then currentIndex would remain 0 and would always be less than the makdown.length and the loop would run infinitely preventing anything from being displayed on the terminal. This infiniteloop was fixed by changing the code to ```currentIndex +=1```. However, if openParen or closeParen was negative, it would cause an index out of bounds exception. I solved this by adding the conditional statement ```if(openParen!=-1 && closeParen!=-1)```.
+
+
+
+
 
 [Test 6](https://sidnair01.github.io/markdown-parse/test-file6.html)
 
