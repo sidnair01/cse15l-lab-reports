@@ -1,6 +1,7 @@
 
 
 ![Test 3 Fix](https://i.gyazo.com/968b35c6612e1f296fe7d90f42ea79c4.png)
+
 [Commit Link](https://github.com/sidnair01/markdown-parse/commit/147986a3e3ee678e93a530095fed9f7140c06b4a)
 
 [Test 3](https://sidnair01.github.io/markdown-parse/test-file3.html)
@@ -12,7 +13,9 @@ The bug here is that the code ```toReturn.add(markdown.substring(openParen + 1, 
 
 
 ![Test 4 Fix](https://i.gyazo.com/e7e4b34d15873eea5421cf35ca08c1f5.png)
+
 [Commit Link](https://github.com/sidnair01/markdown-parse/commit/559ea537034629fc4f4260a6340c919cd925551b)
+^Not the exact commit but right before
 
 [Test 4](https://sidnair01.github.io/markdown-parse/test-file4.html)
 
@@ -23,6 +26,7 @@ The bug here is the code ```currentIndex = closeParen +1;```. This is problemati
 
 
 ![Test 6 Fix](https://i.gyazo.com/1ac365d4b6cc5baebfa4863dd3d647d0.png)
+
 [Commit Link](https://github.com/sidnair01/markdown-parse/commit/8624b3128767922b0e65ccc5724bb4107ba01a69)
 
 
