@@ -8,38 +8,41 @@ Week 5 [Streamlining ssh Configuration](https://ucsd-cse15l-w22.github.io/week/w
 Originally, I would remote ssh into ieng6 using key-based authentication. I followed the template ```ssh username@server```, typing out my specific 
 cse15l account username.
 
-
-
-![previous ssh image]()
+![previous ssh image](https://i.gyazo.com/9e25c68719484d6dbc2d37dedbd05b3f.png)
 
 Before predefining my configuration settings, typing ```ssh ieng6``` was unrecognized and prompted me for a password.
 
-![requires password]()
+![requires password](https://i.gyazo.com/076ac507636bb3ff3b765da49d8c1586.png)
 
 The first step to making this work was moving into my ```.ssh``` folder under the path ```C:\Users\sidna\.ssh```.
-After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file form the start menu.
+After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file and typed the following command into 
+the file.
 
-![opening new notepad]()
-
-I typed this command into the file and saved it as ```config.txt```, since notepad wanted to store it as a text file.
 
 ```Host ieng6
 	   HostName ieng6.ucsd.edu
 	  User cs15lwi22akp
-	  IdentityFile ~/.ssh/id_ed25519_cs15l```
-    
+	  IdentityFile ~/.ssh/id_ed25519_cs15l
+```
+![config file](https://i.gyazo.com/b03726eed617444ab6bad756a5ad44bc.png)
 
 This first two lines of code in the block defines the variable ```ieng6```, which represents the server ieng6.ucsd.edu. The third line specifies my username, and 
 the fourth specifies the path of the ssh key.
 
-![config.txt]()
+I saved the file as ```config.txt```, since notepad wanted to store it as a text file.
+
+![config.txt](https://i.gyazo.com/46852ff03280968b0372eaa4db4e95e8.png)
   
   
-  After saving the file into my directory, I renamed the file to just ```config``` which changed the type of the file from a textfile to a file.
+After saving the file into my directory, I renamed the file to just ```config``` which changed the type of the file from a textfile to a file.
   
- ![config]()
+![config](https://i.gyazo.com/0e75d48f0a2ff6ba63a673813ac6b24f.png)
  
- I now tried running ```ssh ieng6``` and was able to successfully connect to the server using the shortcut.
+I now tried running ```ssh ieng6``` and was able to successfully connect to the server using the shortcut.
+
+![ssh ieng6](https://i.gyazo.com/1a5f05489f6ad49f032a812809016b0b.png)
  
- I then typed ```scp hello.java ieng6``` which successfully transfered the file onto the server.
+I then typed ```scp hello.java ieng6``` which successfully transfered the file onto the server.
+
+![scp ieng6]()
   
