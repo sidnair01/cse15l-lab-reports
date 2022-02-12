@@ -10,6 +10,10 @@ cse15l account username.
 
 ![previous ssh image](https://i.gyazo.com/9e25c68719484d6dbc2d37dedbd05b3f.png)
 
+To transfer files I used the template ```scp filename username@server```.
+
+![previous scp image]()
+
 Before predefining my configuration settings, typing ```ssh ieng6``` was unrecognized and prompted me for a password.
 
 ![requires password](https://i.gyazo.com/076ac507636bb3ff3b765da49d8c1586.png)
@@ -41,8 +45,22 @@ After saving the file into my directory, I renamed the file to just ```config```
 I now tried running ```ssh ieng6``` and was able to successfully connect to the server using the shortcut.
 
 ![ssh ieng6](https://i.gyazo.com/1a5f05489f6ad49f032a812809016b0b.png)
- 
-I then typed ```scp hello.java ieng6``` which successfully transfered the file onto the server.
 
-![scp ieng6]()
+I then created a basic program named ```MyJavaFile.java``` with the code below:
+
+```class MyJavaFile{
+    public static void main(String[] args){
+        System.out.println("Congrats, you did it!");
+    }
+}
+```
+ 
+I changed directories ```\CSE15L\GitHub\cse15l-lab-reports``` which contained the file. Using the shortcut enabled through the config file, I typed ```scp MyJavaFile.java ieng6:~/``` to transfer the program onto the server.
+
+![scp ieng6](https://i.gyazo.com/917897bd0fe5b0098adc696d1d56c43d.png)
+
+I connected to the server and ran ```ls -a```, ```javac MyJavaFile.java```, and ```java MyJavafile``` to ensure the program is present and working on the server.
+
+![testing scp](https://i.gyazo.com/319bde8dde27b136b881e7acb5af8990.png)
+
   
