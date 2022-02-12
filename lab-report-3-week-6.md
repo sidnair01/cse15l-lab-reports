@@ -1,11 +1,11 @@
-Sid Nair A16857282 srnair@ucsd.edu
+Sid Nair 	A16857282 	srnair@ucsd.edu
 
 # Streamlining ssh Configuration
 
 ## Overview
 
 I'm going to explain the process of how I streamlined my ssh Configuration using the directions from 
-Week 5 [Streamlining ssh Configuration](https://ucsd-cse15l-w22.github.io/week/week5/#group-choice-1-streamline-ssh-configuration).
+Week 5 [Streamline ssh Configuration](https://ucsd-cse15l-w22.github.io/week/week5/#group-choice-1-streamline-ssh-configuration).
 
 Originally, I would remote ssh into ieng6 using key-based authentication. I followed the template ```ssh username@server```, typing out my specific 
 cse15l account username.
@@ -14,18 +14,16 @@ cse15l account username.
 
 To transfer files I used the template ```scp filename username@server```.
 
-![previous scp image]()
+![previous scp image](https://i.gyazo.com/e9aea6624d76a6b4975499a8fbd82320.png)
 
-## Streamlined SSH
+### Streamlined SSH
 
 Before predefining my configuration settings, typing ```ssh ieng6``` was unrecognized and prompted me for a password.
 
 ![requires password](https://i.gyazo.com/076ac507636bb3ff3b765da49d8c1586.png)
 
-The first step to making this work was moving into my ```.ssh``` folder under the path ```C:\Users\sidna\.ssh```.
-After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file and typed the following command into 
-the file.
-
+First I moved into the ```.ssh``` folder, which for me was under the path```C:\Users\sidna\.ssh```.
+After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file and typed the following command.
 
 ```Host ieng6
 	   HostName ieng6.ucsd.edu
@@ -34,7 +32,7 @@ the file.
 ```
 ![config file](https://i.gyazo.com/b03726eed617444ab6bad756a5ad44bc.png)
 
-This first two lines of code in the block defines the variable ```ieng6```, which represents the server ieng6.ucsd.edu. The third line specifies my username, and 
+This first two lines of code in the block define the variable ```ieng6```, which represents the server ```ieng6.ucsd.edu```. The third line specifies my username, and 
 the fourth specifies the path of the ssh key.
 
 I saved the file as ```config.txt```, since notepad wanted to store it as a text file.
@@ -50,7 +48,7 @@ I now tried running ```ssh ieng6``` and was able to successfully connect to the 
 
 ![ssh ieng6](https://i.gyazo.com/1a5f05489f6ad49f032a812809016b0b.png)
 
-## Streamlined SCP
+### Streamlined SCP
 
 I then created a basic program named ```MyJavaFile.java``` with the code below:
 
