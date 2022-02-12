@@ -25,11 +25,6 @@ Before predefining my configuration settings, typing ```ssh ieng6``` was unrecog
 First I moved into the ```.ssh``` folder, which for me was under the path```C:\Users\sidna\.ssh```.
 After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file and typed the following command.
 
-```Host ieng6
-	   HostName ieng6.ucsd.edu
-	  User cs15lwi22akp
-	  IdentityFile ~/.ssh/id_ed25519_cs15l
-```
 ![config file](https://i.gyazo.com/b03726eed617444ab6bad756a5ad44bc.png)
 
 This first two lines of code in the block define the variable ```ieng6```, which represents the server ```ieng6.ucsd.edu```. The third line specifies my username, and 
