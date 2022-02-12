@@ -1,6 +1,8 @@
 Sid Nair A16857282 srnair@ucsd.edu
 
-#Streamlining ssh Configuration
+# Streamlining ssh Configuration
+
+## Overview
 
 I'm going to explain the process of how I streamlined my ssh Configuration using the directions from 
 Week 5 [Streamlining ssh Configuration](https://ucsd-cse15l-w22.github.io/week/week5/#group-choice-1-streamline-ssh-configuration).
@@ -13,6 +15,8 @@ cse15l account username.
 To transfer files I used the template ```scp filename username@server```.
 
 ![previous scp image]()
+
+## Streamlined SSH
 
 Before predefining my configuration settings, typing ```ssh ieng6``` was unrecognized and prompted me for a password.
 
@@ -46,20 +50,23 @@ I now tried running ```ssh ieng6``` and was able to successfully connect to the 
 
 ![ssh ieng6](https://i.gyazo.com/1a5f05489f6ad49f032a812809016b0b.png)
 
+## Streamlined SCP
+
 I then created a basic program named ```MyJavaFile.java``` with the code below:
 
-```class MyJavaFile{
+```
+class MyJavaFile{
     public static void main(String[] args){
         System.out.println("Congrats, you did it!");
     }
 }
 ```
  
-I changed directories ```\CSE15L\GitHub\cse15l-lab-reports``` which contained the file. Using the shortcut enabled through the config file, I typed ```scp MyJavaFile.java ieng6:~/``` to transfer the program onto the server.
+I changed directories to ```\CSE15L\GitHub\cse15l-lab-reports``` which contained the file. Using the shortcut enabled through the config file, I typed ```scp MyJavaFile.java ieng6:~/``` to transfer the program onto the server.
 
 ![scp ieng6](https://i.gyazo.com/917897bd0fe5b0098adc696d1d56c43d.png)
 
-I connected to the server and ran ```ls -a```, ```javac MyJavaFile.java```, and ```java MyJavafile``` to ensure the program is present and working on the server.
+I connected to the server and ran ```ls```, ```javac MyJavaFile.java```, and ```java MyJavafile``` to ensure the program is present and working on the server.
 
 ![testing scp](https://i.gyazo.com/319bde8dde27b136b881e7acb5af8990.png)
 
