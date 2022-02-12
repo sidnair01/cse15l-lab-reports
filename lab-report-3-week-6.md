@@ -22,8 +22,8 @@ Before predefining my configuration settings, typing ```ssh ieng6``` was unrecog
 
 ![requires password](https://i.gyazo.com/076ac507636bb3ff3b765da49d8c1586.png)
 
-First I moved into the ```.ssh``` folder, which for me was under the path```C:\Users\sidna\.ssh```.
-After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file and typed the following command.
+First I moved into the ```.ssh``` folder, which for me was under the path ```C:\Users\sidna\.ssh```.
+After checking and making sure there wasn't a previous config file within the directory, I opened a new Notepad file (most editors will be fine) and typed the following command.
 
 ![config file](https://i.gyazo.com/b03726eed617444ab6bad756a5ad44bc.png)
 
