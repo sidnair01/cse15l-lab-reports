@@ -2,7 +2,7 @@ Sid Nair 	A16857282 	srnair@ucsd.edu
 
 # Streamlining ssh Configuration
 
-## Overview
+### Before Streamlining :(
 
 I'm going to explain the process of how I streamlined my ssh Configuration using the directions from 
 Week 5 [Streamline ssh Configuration](https://ucsd-cse15l-w22.github.io/week/week5/#group-choice-1-streamline-ssh-configuration).
