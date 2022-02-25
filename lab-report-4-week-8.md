@@ -32,3 +32,9 @@ All tests failed
 
 The problem is that neither my implementation nor that of the group I reviewed is able to address backticks when searching for valid links.
 
+To my knowledge I do not think it is possible to account for all cases of backticks within a reasonable code length (~10 lines). I was able to fix the case of ```url.com``` incorrectly showing up by adding the following argument to my conditional statement: ```markdown.charAt(nextOpenBracket-1) != '`'```, which checks if the character befroe the openbracket is a backtick and then invalidating the link. However, this is completely flawed because if a pair of backticks near the bracket was present it would throw off the link, and trying to account for all cases of backticks seems too large of a challenge to handle(for me at least).
+
+I think it would be possible to account for nested pairs of parentheses, brackets, and escaped brackets through the use of a stack. If an initial openbracket was found then a stack would be initialized. A for loop could start and would push any future open parentheses or brackets to the stack. If it ran into a closed parenthesis or bracket and it matched the top of the stack it would pop the stack. If the stack is empty and a closed bracket is found that signifies the end of the link name. However, I don't think this would be possible within a reasonable code length.
+
+I'm not exactly sure if this is possible, but once markdownparse determines that open and close brackets exist, it could set a variable equal to the substring between those two indexes of markdown and search for new lines. If it finds a new line then the link is invalidated. It would also continue this search between the open and closed parentheses. I believe this would be possible within a reasonable length assuming it's possible to search for new lines.
+
