@@ -4,7 +4,7 @@ Sid Nair A16857282 srnair@ucsd.edu
 
 [My Repository](https://github.com/sidnair01/markdown-parse.git)
 
-[Can't find this yet]()
+[Other Group Repository](https://github.com/yih365/markdown-parse)
 
 Although the tests for my own markdownparse and that for the group I reviewed are within separate files, the code is the exact same. The only difference is the directory I call them in.
 
