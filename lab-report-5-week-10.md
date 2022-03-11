@@ -42,11 +42,7 @@ The implementation my group has is corrected in this situation because 194.md do
 
 The cloned MarkdownParse lacks code to check for text in between the closed bracket and open parenthesis. Therefore, it adds invalid links to the list.
 
-Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)```to check if the open parentheses comes directly after the closed bracket would help.
-
-
-
-
+Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)``` to check if the open parentheses comes directly after the closed bracket would help.
 
 
 ### Test 201.md
@@ -70,5 +66,5 @@ The implementation my group has is corrected in this situation because 201.md do
 
 The cloned MarkdownParse lacks code to check for text in between the closed bracket and open parenthesis. Therefore, it adds invalid links to the list.
 
-Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)```to check if the open parentheses comes directly after the closed bracket would help.
+Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)``` to check if the open parentheses comes directly after the closed bracket would help.
 
