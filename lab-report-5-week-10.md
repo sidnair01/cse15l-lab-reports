@@ -1,6 +1,6 @@
-# Sid Nair A16857282 srnair@ucsd.edu
+### Sid Nair A16857282 srnair@ucsd.edu
 
-## Lab Report 5
+# Lab Report 5
 
 
 I first ran the script bash file with the ```>``` command to write the results of each test into a file called ```results.txt```:
@@ -43,6 +43,8 @@ The implementation my group has is corrected in this situation because 194.md do
 The cloned MarkdownParse lacks code to check for text in between the closed bracket and open parenthesis. Therefore, it adds invalid links to the list.
 
 Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)```to check if the open parentheses comes directly after the closed bracket would help.
+
+
 
 
 
