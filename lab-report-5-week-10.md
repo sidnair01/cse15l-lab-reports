@@ -36,7 +36,9 @@ Cloned Directory: [url]
 
 The implementation my group has is corrected in this situation because 194.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
 
-!(194 bug)[https://i.gyazo.com/ab115344ba97b90a7c8cdbbaff1045a6.png]
+> Bug
+
+![194 bug](https://i.gyazo.com/ab115344ba97b90a7c8cdbbaff1045a6.png)
 
 The cloned MarkdownParse lacks code to check for text in between the closed bracket and open parenthesis. Therefore, it adds invalid links to the list.
 
@@ -59,6 +61,8 @@ Cloned Directory: [baz]
 
 
 The implementation my group has is corrected in this situation because 201.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
+
+>Bug 
 
 ![201 bug](https://i.gyazo.com/ab115344ba97b90a7c8cdbbaff1045a6.png)
 
