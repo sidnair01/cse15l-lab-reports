@@ -14,16 +14,23 @@ Although the tests for my own markdownparse and that for the group I reviewed ar
 
 ![Snippet1Test](https://i.gyazo.com/dda181b0178bfd6080bcc963d9bc2d08.png)
 
+Expected Output: [`google.com, google.com, ucsd.edu]
+
 
 ### Snippet 2 Test
 
 ![Snippet2Test](https://i.gyazo.com/f846b8f462f6c5a9dbe21b120c6c9ddc.png)
+
+Expected Output: [a.com, a.com(()), example.com]
 
 
 ### Snippet 3 Test
 
 ![Snippet3Test](https://i.gyazo.com/ca39d971c47aa168dbc9bcdef87fed34.png)
 
+Expect Output: [https://ucsd.-cse15l-wi22.github.io/]
+
+The expected outputs are listed below each test image, and should be in the form of a list of strings displayed in the terminal window
 
 
 ## Results
