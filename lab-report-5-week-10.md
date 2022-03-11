@@ -23,7 +23,7 @@ Finally, to double check, I did a quick scan of the files manually.
 
 Test 194.md
 
-[194.md image](https://i.gyazo.com/17d0d72d5a0ab86999f01be591d5c2cb.png)
+![194.md image](https://i.gyazo.com/17d0d72d5a0ab86999f01be591d5c2cb.png)
 
 Our Group: [] Cloned : [url]
 
@@ -31,7 +31,7 @@ Our Group: [] Cloned : [url]
 
 Test 201.md
 
-[201.md image](https://i.gyazo.com/da36179b5956cf7e3c12bdf63f4a1596.png)
+![201.md image](https://i.gyazo.com/da36179b5956cf7e3c12bdf63f4a1596.png)
 
 Our Group: [] Cloned: [baz]
 
