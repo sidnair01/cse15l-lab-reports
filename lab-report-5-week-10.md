@@ -1,4 +1,4 @@
-### Sid Nair A16857282 srnair@ucsd.edu
+Sid Nair A16857282 srnair@ucsd.edu
 
 # Lab Report 5
 
@@ -34,7 +34,7 @@ My Group Directory: []
 Cloned Directory: [url]
 
 
-The implementation my group has is corrected in this situation because 194.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
+The implementation my group has is correct in this situation because 194.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
 
 > Bug
 
@@ -58,7 +58,7 @@ My Group Directory: []
 Cloned Directory: [baz]
 
 
-The implementation my group has is corrected in this situation because 201.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
+The implementation my group has is correct in this situation because 201.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
 
 >Bug 
 
