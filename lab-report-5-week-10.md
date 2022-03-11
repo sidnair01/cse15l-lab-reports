@@ -25,7 +25,7 @@ Finally, to double check, I did a quick scan of the files manually.
 
 ![194.md image](https://i.gyazo.com/17d0d72d5a0ab86999f01be591d5c2cb.png)
 
-Results
+> Results
 
 Expected: []
 
@@ -36,11 +36,11 @@ Cloned Directory: [url]
 
 The implementation my group has is corrected in this situation because 194.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
 
-!(bug)[https://i.gyazo.com/ab115344ba97b90a7c8cdbbaff1045a6.png]
+!(194 bug)[https://i.gyazo.com/ab115344ba97b90a7c8cdbbaff1045a6.png]
 
 The cloned MarkdownParse lacks code to check for text in between the closed bracket and open parenthesis. Therefore, it adds invalid links to the list.
 
-Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)``` would help in this situation.
+Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)```to check if the open parentheses comes directly after the closed bracket would help.
 
 
 
@@ -49,7 +49,7 @@ Adding a simple conditional statement such as ```if (openParen == nextCloseBrack
 
 ![201.md image](https://i.gyazo.com/da36179b5956cf7e3c12bdf63f4a1596.png)
 
-Results
+> Results
 
 Expected: []
 
@@ -60,6 +60,9 @@ Cloned Directory: [baz]
 
 The implementation my group has is corrected in this situation because 201.md does not contain any parsable links. The cloned directory seems to have issues dealing with spaces and/or characters between the parsable brackets and parentheses.
 
-Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)``` would help in this situation.
+![201 bug](https://i.gyazo.com/ab115344ba97b90a7c8cdbbaff1045a6.png)
+
 The cloned MarkdownParse lacks code to check for text in between the closed bracket and open parenthesis. Therefore, it adds invalid links to the list.
+
+Adding a simple conditional statement such as ```if (openParen == nextCloseBracket +1)```to check if the open parentheses comes directly after the closed bracket would help.
 
